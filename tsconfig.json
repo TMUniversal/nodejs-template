@@ -1,8 +1,8 @@
 {
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
-    "outDir": "./build"
+    "outDir": "./dist"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
