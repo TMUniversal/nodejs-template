@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-template",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "npm run lint",
+    "lint": "tslint --project . src/**/*.ts",
+    "build": "npm run clean && npm run build:ts",
+    "build:ts": "tsc -p ./",
+    "preversion": "npm run test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMUniversal/nodejs-template.git"
+  },
+  "author": "TMUniversal <me@tmuniversal.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TMUniversal/nodejs-template/issues"
+  },
+  "homepage": "https://github.com/TMUniversal/nodejs-template#readme",
+  "description": "",
+  "devDependencies": {
+    "@tmuniversal/ts": "^1.0.3"
+  }
+}
