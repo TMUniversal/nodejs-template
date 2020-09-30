@@ -42,7 +42,6 @@ With yarn: `yarn add @scope/package-name`
 
 ### Usage
 
-
 ### More advanced examples
 
 ## License
